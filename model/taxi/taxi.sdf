@@ -3,6 +3,7 @@
   <model name="taxi">
     <static>true</static>
     <link name="link">
+      <pose>0 0 0.1 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <mesh>
