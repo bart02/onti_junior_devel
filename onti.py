@@ -3,10 +3,10 @@
 import rospy
 import math
 from clover import srv
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Float64MultiArray
 
 rospy.init_node('junior_check_points')
-pub = rospy.Publisher('/sensors', Float32MultiArray)
+pub = rospy.Publisher('/sensors', Float64MultiArray)
 get_telemetry = rospy.ServiceProxy('get_telemetry', srv.GetTelemetry)
 
 data = {(3.64,6.25): [-8, 0.01, 0.04, 2.80, 0.05, 0.04, 0.01, 0.04],
@@ -27,7 +27,7 @@ while not rospy.is_shutdown():
                 minn = dist
                 min_i = e
         
-        to_pub = Float32MultiArray()
+        to_pub = Float64MultiArray()
         to_pub.data = data[min_i]
         pub.publish(to_pub)
 
