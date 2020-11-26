@@ -13,73 +13,11 @@
       <pose>0 0 -0.01 0 0 0</pose>
     </include>
 
-    <!-- taxi -->
-    <include>
-      <uri>model://taxi</uri>
-      <name>t_1</name>
-      <pose>5.21648 6.91807 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://taxi</uri>
-      <name>t_2</name>
-      <pose>-0.208769 4.87297 0 0 0 0</pose>
-    </include>
-
-    <!-- house -->
-    <include>
-      <uri>model://house</uri>
-      <name>h_1</name>
-      <pose>1.02095 8.0766 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://house</uri>
-      <name>h_2</name>
-      <pose>8.27341 4.73984 0 0 0 0</pose>
-    </include>
-
-    
     <!-- dronepoint -->
     <include>
       <uri>model://dronepoint</uri>
       <name>dp_1</name>
       <pose>8.0017 0.953881 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://dronepoint</uri>
-      <name>dp_2</name>
-      <pose>8.98325 8.88873 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://dronepoint</uri>
-      <name>dp_3</name>
-      <pose>3.64377 6.25171 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://dronepoint</uri>
-      <name>dp_4</name>
-      <pose>1.06102 0.979234 0 0 0 0</pose>
-    </include>
-
-    <!-- quadrotor -->
-    <include>
-      <uri>model://quadrotor</uri>
-      <name>q_1</name>
-      <pose>3.29023 3.06857 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://quadrotor</uri>
-      <name>q_2</name>
-      <pose>3.35125 2.66441 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://quadrotor</uri>
-      <name>q_3</name>
-      <pose>5.40487 0.039939 0 0 0 0</pose>
-    </include>
-    <include>
-      <uri>model://quadrotor</uri>
-      <name>q_4</name>
-      <pose>5.98742 0.321852 0 0 0 0</pose>
     </include>
 
     <scene>

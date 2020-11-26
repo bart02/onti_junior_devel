@@ -9,10 +9,7 @@ rospy.init_node('junior_check_points')
 pub = rospy.Publisher('/sensors', Float64MultiArray)
 get_telemetry = rospy.ServiceProxy('get_telemetry', srv.GetTelemetry)
 
-data = {(3.64,6.25): [-8, 0.01, 0.04, 2.80, 0.05, 0.04, 0.01, 0.04],
-        (1.02,8.07): [-8, 0.05, 0.039, 2.10, 0.03, 0.03, 0.03, 0.03], 
-        (3.29,3.06): [-8, 0.06, 0.038, 1.70, 0.05, 0.06, 0.01, 0.04],
-        (5.4,0.03): [-8, 0.06, 0.050, 2.00, 0.03, 0.07, 0.03, 0.05]}
+data = {(3.64,6.25): [-8, 0.01, 0.04, 2.80, 0.05, 0.04, 0.01, 0.04]}
 
 r = rospy.Rate(10)
 while not rospy.is_shutdown():
